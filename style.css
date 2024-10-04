@@ -1,0 +1,467 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #3b119e;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 150px; /* Adjust size as needed */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin-bottom: 0;
+}
+
+.contact-info strong {
+    color: #ffd700; /* Accent color for phone number */
+}
+/* Existing CSS styles from previous example */
+
+.hero {
+    background-image: url('image/blog-5.jpg'); /* Replace with your hero background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color:grey;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700; /* Gold color */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f9a602; /* Darker shade of gold on hover */
+}
+/* Existing CSS styles from previous examples */
+
+.about-section {
+    background-color: #222;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    margin-top: 30px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(168, 141, 141, 0.5);
+}
+/* Existing CSS styles from previous examples */
+
+.services-section {
+    background-color: rgb(51, 210, 231);
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item {
+    text-align: left;
+    padding: 20px;
+    background-color: #11b864;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+/* Existing CS
+S styles from previous examples */
+.projects-section {
+    background-image: url('./image/home-slide-2.jpg'); /* Replace with your hero background image */
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fcf807;
+    padding: 80px 0;
+    color: #161515;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 80px;
+    color: greenyellow;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(150, 132, 132, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item img {
+    width: 100%;
+    height: 182px;
+    display: inline-grid;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    /* Semi-transparent black background */
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fdfdff;
+}
+/* Existing CSS styles from previous examples */
+
+.testimonials-section {
+    background-color: #f82f7c;
+    padding: 80px 0;
+    height: 104vh;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.testimonial-item {
+    padding: 30px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-item cite {
+    font-style: italic;
+    font-size: 1rem;
+    color: #ffd700; /* Gold color */
+}
+/* Existing CSS styles from previous examples */
+
+.contact-section {
+    background-color: #690808;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #661818;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ffd700; /* Gold color */
+    color: #68a8f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f9a602; /* Darker shade of gold on hover */
+}
+/* Existing CSS styles from previous examples */
+
+.footer-section {
+    background-color: #8beef5;
+    padding: 50px 0;
+    color: #ee3030;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: #a76464;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700; /* Gold color */
+}
+
+.footer-social a {
+    color: #39f021;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffd700; /* Gold color */
+}
+
+.footer-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9e4e4;
+    color: #c93333;
+}
+
+#design-planning {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #49db0e;
+}
+
+.service-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.service-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eb2929;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #cccccc;
+}
